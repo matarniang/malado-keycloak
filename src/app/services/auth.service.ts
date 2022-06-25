@@ -6,17 +6,14 @@ import { getToken} from '../../model/getToken.model';
 
 import { environnement } from "../shared/environnement";
 import { config } from "../config/config";
-import { HttpClient, HttpResponse } from '@angular/common/http';
-// export type EntityResponseType = HttpResponse<DemandeRequest>;
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
     providedIn: 'root'
  })
 export class AuthService {
 
-    constructor(private http: HttpClient){ }
-
-    
+    constructor(private http: HttpClient){ }    
     public pointoracle: string= "services/oracle/api/"
     public pointwindows: string= "services/windows/api/"
     public pointnessico: string= "services/nessico/api/"
